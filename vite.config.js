@@ -8,9 +8,9 @@ export default defineConfig({
     federation({
       name: 'host',
       remotes: {
-        nav: process.env.NAV_URL || "http://localhost:4174/assets/remoteEntry.js",
-        main: process.env.MAIN_URL || "http://localhost:4175/assets/remoteEntry.js",
-        footer: process.env.FOOTER_URL || "http://localhost:4173/assets/remoteEntry.js"
+        nav: "https://microfrontend-nav.netlify.app/assets/remoteEntry.js",
+        main: "https://microfrontend-main.netlify.app/assets/remoteEntry.js",
+        footer: "https://microfrontend-footer.netlify.app/assets/remoteEntry.js"
       },
       shared: ['react', 'react-dom']
     })
